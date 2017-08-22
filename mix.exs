@@ -6,6 +6,8 @@ defmodule Issues.Mixfile do
       app: :issues,
       escript: escript_config(),
       version: "0.1.0",
+      name: "Issues",
+      source_url: "https://github.com/nelsonic/issues",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps()
@@ -23,7 +25,9 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       { :httpoison, "~> 0.9" },
-      { :poison,    "~> 2.2" }
+      { :poison,    "~> 2.2" },
+      {:ex_doc,     "~> 0.12"},
+      {:earmark,    "~> 1.0", override: true}
     ]
   end
   

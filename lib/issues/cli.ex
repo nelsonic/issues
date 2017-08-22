@@ -49,7 +49,7 @@ defmodule Issues.CLI do
       |> decode_response
       |> sort_into_ascending_order
       |> Enum.take(count)
-      |> IO.inspect
+      # |> IO.inspect
       |> print_table_for_columns(["number", "created_at", "title"])
   end
 
