@@ -18,6 +18,7 @@ defmodule TableFormatterTest do
 
   test "split_into_columns" do
     columns = split_with_three_columns()
+
     assert length(columns) == length(headers())
     assert List.first(columns) == ["r1 c1", "r2 c1", "r3 c1", "r4 c1"]
     assert List.last(columns) == ["r1+++c4", "r2 c4", "r3 c4", "r4 c4"]
