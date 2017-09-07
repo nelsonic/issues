@@ -2,18 +2,21 @@
 
 Fetch issues from GitHub API
 
-## Installation
+## download
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `issues` to your list of dependencies in `mix.exs`:
+Clone the project from GitHub:
 
-```elixir
-def deps do
-  [
-    {:issues, "~> 0.1.0"}
-  ]
-end
 ```
+git clone https://github.com/nelsonic/issues.git
+```
+
+## install (_dependencies_)
+
+install dependencies
+```
+mix deps.get
+```
+
 
 ## usage
 
