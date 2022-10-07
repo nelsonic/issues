@@ -5,11 +5,11 @@ defmodule Issues.Mixfile do
     [
       app: :issues,
       escript: escript_config(),
-      version: "0.1.0",
-      name: "Issues",
+      version: "1.0.0",
+      name: "issues",
       source_url: "https://github.com/nelsonic/issues",
-      elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      elixir: "~> 1.12",
+      start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
@@ -24,14 +24,14 @@ defmodule Issues.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      { :httpoison, "~> 0.9" },
-      { :poison,    "~> 2.2" },
-      { :ex_doc,    "~> 0.12"},
-      { :earmark,   "~> 1.0", override: true}
+      {:httpoison, "~> 1.8.2"},
+      {:poison, "~> 5.0.0"},
+      {:ex_doc, "~> 0.28.5"},
+      {:earmark, "~> 1.4.30", override: true}
     ]
   end
-  
+
   defp escript_config do
-    [ main_module: Issues.CLI ]
+    [main_module: Issues.CLI]
   end
 end
