@@ -2,6 +2,10 @@
 
 Fetch issues from GitHub API
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nelsonic/issues/Elixir%20CI?label=build&style=flat-square)
+[![contributions welcome](https://img.shields.io/badge/feedback-welcome-brightgreen.svg?style=flat-square)](https://github.com/nelsonic/issues/issues)
+[![HitCount](https://hits.dwyl.com/nelsonic/issues.svg)](https://hits.dwyl.com/nelsonic/issues)
+
 ## download
 
 Clone the project from GitHub:
