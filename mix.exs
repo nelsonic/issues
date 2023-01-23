@@ -24,7 +24,7 @@ defmodule Issues.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.8.2"},
+      {:httpoison, "~> 2.0.0"},
       {:poison, "~> 5.0.0"},
       {:ex_doc, "~> 0.29.0"},
       {:earmark, "~> 1.4.30", override: true}
