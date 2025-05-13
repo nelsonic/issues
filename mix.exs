@@ -26,7 +26,7 @@ defmodule Issues.Mixfile do
     [
       {:httpoison, "~> 2.2.0"},
       {:poison, "~> 6.0.0"},
-      {:ex_doc, "~> 0.37.0"},
+      {:ex_doc, "~> 0.38.1"},
       {:earmark, "~> 1.4.30", override: true}
     ]
   end
